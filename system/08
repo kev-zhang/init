@@ -1,0 +1,2 @@
+privite RSA key: ~/.ssh/id_rsa
+public RSA key: ~/.ssh/id_rsa.pub

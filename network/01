@@ -1,0 +1,1 @@
+ifconfig | grep -v "\t" | awk '{print $1}' | sed 's/://g'

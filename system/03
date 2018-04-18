@@ -1,0 +1,5 @@
+vim /etc/hostname and change to new name (example: new)
+
+vim /etc/hosts and replace all old name with new name
+
+then restart system (use reboot command)

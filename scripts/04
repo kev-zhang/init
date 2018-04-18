@@ -1,0 +1,14 @@
+md5sum /etc/crontab > ~/crontab.md5
+
+echo "#!/bin/bash" > ~/email.sh
+chmod 755 ~/email.sh
+
+echo "check=\"\$(md5sum -c ~/crontab.md5 2> /dev/null | awk '{print \$2}')\"" >> ~/email.sh
+
+echo "if [ \$check = \"FAILED\" ]" >> ~/email.sh
+echo "then" >> ~/email.sh
+echo "echo \"file changed\" | mail root" >> ~/email.sh
+echo "md5sum /etc/crontab > ~/crontab.md5" >> ~/email.sh
+echo "fi" >> ~/email.sh
+
+echo "0 0 * * * root ~/email.sh" | crontab

@@ -1,0 +1,8 @@
+Edit the address in /etc/hosts for intra.42.fr to 46.19.122.85
+
+Example:
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+
+46.19.122.85 	intra.42.fr
