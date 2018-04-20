@@ -1,2 +1,4 @@
 privite RSA key: ~/.ssh/id_rsa
 public RSA key: ~/.ssh/id_rsa.pub
+
+#https://www.cyberciti.biz/faq/linux-generating-rsa-keys/ for reference.

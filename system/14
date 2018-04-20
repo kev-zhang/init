@@ -1,1 +1,3 @@
+#need to type out command, doesn't work as a script!!!
+
 tail -f /var/log/syslog &
